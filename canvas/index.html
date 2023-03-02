@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meme maker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="color-options">
+      <input type="color" id="color" />
+      <div class="color-option" style="background-color: #c56cf0" data-color="#c56cf0"></div>
+      <div class="color-option" style="background-color: #ffb8b8" data-color="#ffb8b8"></div>
+      <div class="color-option" style="background-color: #ff3838" data-color="#ff3838"></div>
+      <div class="color-option" style="background-color: #ff9f1a" data-color="#ff9f1a"></div>
+      <div class="color-option" style="background-color: #fff200" data-color="#fff200"></div>
+      <div class="color-option" style="background-color: #32ff7e" data-color="#32ff7e"></div>
+      <div class="color-option" style="background-color: #2ecc71" data-color="#2ecc71"></div>
+      <div class="color-option" style="background-color: #7efff5" data-color="#7efff5"></div>
+      <div class="color-option" style="background-color: #18dcff" data-color="#18dcff"></div>
+      <div class="color-option" style="background-color: #7d5fff" data-color="#7d5fff"></div>
+      <div class="color-option" style="background-color: #4b4b4b" data-color="#4b4b4b"></div>
+      <div class="color-option" style="background-color: #a5b1c2" data-color="#a5b1c2"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+      <span>Pencil Width</span>
+      <input id="line-width" type="range" min="1" max="10" value="5" step="0.1" />
+      <button id="mode-btn">🩸 Fill</button>
+      <button id="destroy-btn">💣 Destroy</button>
+      <button id="eraser-btn">❌ Erase</button>
+      <label for="file">
+        📸 Add Photo
+        <input type="file" accept="image/*" id="file" />
+      </label>
+      <span class="fontSize-wrap">
+        <span>Font Size</span>
+        <input id="font-size" type="range" min="16" max="90" value="50" />
+        <input type="text" placeholder="Write and then double click" id="text" />
+      </span>
+      <button id="save">🔲 Save image</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
